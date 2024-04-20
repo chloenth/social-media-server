@@ -1,5 +1,6 @@
 import User from '../models/User.js';
 
+// GET USER
 export const getUser = async (req, res) => {
   try {
     const { id } = req.params;
@@ -10,6 +11,7 @@ export const getUser = async (req, res) => {
   }
 };
 
+// GET USER FRIENDS
 export const getUserFriends = async (req, res) => {
   try {
     const { id } = req.params;
@@ -30,6 +32,7 @@ export const getUserFriends = async (req, res) => {
   }
 };
 
+// ADD REMOVE FRIEND
 export const addRemoveFriend = async (req, res) => {
   try {
     const { id, friendId } = req.params;
